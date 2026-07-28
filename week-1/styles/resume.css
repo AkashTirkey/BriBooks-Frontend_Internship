@@ -1,4 +1,9 @@
 
+*{
+    /* margin:0; */
+    /* padding:0; */
+    box-sizing:border-box;
+}
 #contact a{
     text-decoration: none;
     color: red;
@@ -6,4 +11,70 @@
 
 #footer h5{
     text-align: center;
+}
+
+/* media queries */
+
+/* for small devices */
+/* @media(max-width:500px){
+    
+    html,body{
+        width: 100%;
+    }
+} */
+/* Mobile phone */
+@media(max-width:768px){
+h1,h2{
+    text-align: center;
+}
+
+body{
+    /* font-size: 1rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 2px;
+    padding: 20px; */
+    /* overflow:hidden; */
+}
+
+/* #projects ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+} */
+
+
+.project-info{
+    padding-left: 0px;
+}
+
+#skills ul{
+    padding-left: 0px;
+}
+.project-info li{
+    border: 1px solid black;    
+    padding:5px 10px;
+    list-style: none;
+}
+
+#skills ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#skills ul li{
+    list-style: none;
+    border: 1px solid black;
+    padding: 5px 20px;
+    background-color: aliceblue;
+}
+
+#contact{
+    /* overflow: hidden; */
+    width: 100%;
+}
 }
