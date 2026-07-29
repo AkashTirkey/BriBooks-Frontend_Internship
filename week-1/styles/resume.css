@@ -4,13 +4,50 @@
     /* padding:0; */
     box-sizing:border-box;
 }
+.container{
+    background: url(../images/—Pngtree—my\ resume\ background\ material_1117680.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+
+
+
+    margin: 40px auto;
+    padding: 0 20px;
+    max-width: 1200px;
+    /* border-left: 1px solid black;
+    border-right: 1px solid black; */
+    border: 1px solid black;
+    font-family: "Poppins", sans-serif;
+}
+
+header h1{
+    text-align: center;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
 #contact a{
     text-decoration: none;
     color: red;
 }
 
+.project-info{
+    padding-left: 0px;
+}
+.project-info li{
+    list-style: none;
+}
+
 #footer h5{
     text-align: center;
+}
+
+#footer{
+    border-top: 1px solid black;
+}
+
+#skills ul li{
+    list-style:decimal;
 }
 
 /* media queries */

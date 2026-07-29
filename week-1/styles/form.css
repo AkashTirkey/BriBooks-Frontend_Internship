@@ -69,6 +69,10 @@ form>:nth-child(2){
     width: 50%;
 }
 
+fieldset{
+    border: none;
+}
+
 .contact-info{
     margin-bottom:20px;
 }
