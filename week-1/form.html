@@ -5,40 +5,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form</title>
+    <link rel="stylesheet" href="./styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <form action="#">
         <h1>Contact Form</h1>
-        <p>Personal Information</p>
-        <hr>
-        <label for="fname">First Name:</label>
-        <input type="text" id="fname" name="" placeholder="Enter first name" required>
+        <h2>Personal Information</h2>
+        <!-- <hr> -->
+        <div class="contact-info">
+            <div class="first-row">
+                <div class="first-name">
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname" placeholder="Enter first name" required>
+                </div>
+                <div class="last-name">
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname" placeholder="Enter last name" required>
+                </div>
 
-        <label for="lname">Last Name:</label>
-        <input type="text" id="lname" placeholder="Enter last name" required> <br>
+            </div>
 
-        <label for="address">Street Address:</label>
-        <input type="text" id="address" placeholder="address here..." required>
+            <div class="form-grp">
+                <label for="address">Street Address:</label>
+                <input type="text" id="address" name="address" placeholder="address here..." required>
 
-        <label for="address2">Address Line 2:</label>
-        <input type="text" id="address2" placeholder="address here..." required> <br>
+                <label for="address2">Address (optional):</label>
+                <input type="text" id="address2" name="address2" placeholder="address here..." required>
+            </div>
 
-        <label for="city">City</label>
-        <input type="text" id="city" placeholder="Enter City here"> <br>
 
-        <label for="zip">Zip Code:</label>
-        <input inputmode="numeric" id="zip" placeholder="12345" required>
+
+            <div class="second-row">
+                <div class="city">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city" placeholder="Enter City here">
+                </div>
+
+                <div class="zip">
+                    <label for="zip">Zip Code:</label>
+                    <input inputmode="numeric" id="zip" name="zip" placeholder="Number only" required>
+                </div>
+
+            </div>
+
+        </div>
 
         <fieldset>
             <legend>Contact Details</legend>
-            <label for="e-address">Email Address</label>
-            <input type="email" placeholder="Enter Email here.." id="e-address">
-            <label for="pnumber">Contact Number</label>
-            <input type="tel" id="pnumber">
+            <div class="cnct-details">
+                <div class="emailid">
+                    <label for="emailids">Email Address</label>
+                    <input type="email" list="ids" placeholder="Enter Email here.." id="emailids">
+
+                    <datalist id="ids">
+                        <option value="akashdeep34@gmail.com">akashdeep34@gmail.com</option>
+                        <option value="akash.tirkeywork@gmail.com">akash.tirkeywork@gmail.com</option>
+                        <option value="lorem34@gmail.com">lorem34@gmail.com</option>
+                    </datalist>
+                </div>
+
+                <div class="num">
+                    <label for="pnumber">Contact Number</label>
+                    <input type="tel" id="pnumber">
+                </div>
+
+            </div>
+
             <h2>Ask your question</h2>
-            <textarea name="query" id="" rows="10px" cols="50px" placeholder="query here...."></textarea> <br>
-            <button>submit</button>
+            <textarea name="query" id="contact" rows="10px" cols="50px" placeholder="query here...."></textarea>
+            <button class="btn-container">submit</button>
         </fieldset>
     </form>
 

@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(209, 215, 220);
+}
+form{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+form > :nth-child(1){
+    text-align: center;
+}
+
+form>:nth-child(2){
+    text-align: center;
+}
+
+/* first name row  */
+.first-row{
+    display: flex;
+    gap: 10%;
+    margin-bottom: 20px;
+}
+
+.first-name{
+    width: 50%;
+}
+.last-name{
+    width: 50%;
+}
+
+.first-name input{
+    width:60%;
+}
+
+.last-name input{
+    width: 60%;
+}
+
+.form-grp{
+    margin-bottom: 20px;
+}
+
+.form-grp label{
+    display: block;
+}
+
+.form-grp input{
+    width: 60%;
+}
+
+.form-grp input{
+    margin-bottom: 8px;
+}
+
+.second-row{
+    display: flex;
+    gap: 10%;
+}
+
+.city{
+    width: 50%;
+}
+
+.zip{
+    width: 50%;
+}
+
+.contact-info{
+    margin-bottom:20px;
+}
+
+.cnct-details{
+    display: flex;
+    gap: 10%;
+}
+
+.emailid{
+    width: 50%;
+}
+
+.num{
+    width: 50%;
+}
+
+.emailid input{
+    width: 60%;
+}
+
+.btn-container{
+    display: block;
+    padding: 3px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* media queries */
+@media(max-width:768px){
+    .first-row{
+        flex-wrap: wrap;
+    }
+    .first-name{
+        margin-bottom: 20px;
+    }
+    .cnct-details{
+        flex-wrap: wrap;
+    }
+
+    .emailid{
+        margin-bottom: 20px;
+    }
+
+    .first-name input{
+        width: 100%;
+    }
+
+    .last-name input{
+        width: 100%;
+    }
+
+    .form-grp input{
+        width: 100%;
+    }
+
+    .emailid input{
+        width: 90%;
+    }
+}
