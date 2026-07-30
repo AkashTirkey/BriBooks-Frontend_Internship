@@ -1,0 +1,8 @@
+This property is used for responsiveness
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+minmax()- it takes 2 values , minwidth and maxwidth size.
+
+1fr stands for one fraction unit. It represents one equal share of the leftover, unallocated space inside a grid container
+
+suppose grid-template-columns:1fr 2fr 1fr; 1st portion will get- 25% 2nd will get - 50%, 3rd portion will get-25%
