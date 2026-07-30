@@ -21,12 +21,17 @@ div{
     border: 1px solid black;
     padding: 10px;
     background-color: aliceblue;
-    font-size: 1.3rem;
+    /* font-size: 1.3rem;    */
 
 }
 
-@media(maxwidth:768px){
-html{
-    font-size: 0.3rem;
+@media (max-width:768px){
+    html{
+        font-size: 2rem;
+    }
+
+.Container>div:nth-child(even){
+    background-color: red;
+    color: pink;
 }
 }
