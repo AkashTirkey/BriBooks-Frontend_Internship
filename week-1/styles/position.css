@@ -34,8 +34,10 @@
 /* adding keyframes  */
 
 @keyframes slideRight{
-    0% { background-color:red;transform: translateX(0) rotate(0deg) }
-    100% { background-color: green; transform: translateX(200px) rotate(360deg)}
+    /* 0% { background-color:red;transform: translateX(0) rotate(0deg) } */
+    0% { background-color:red;transform: translateX(0) }
+    /* 100% { background-color: green; transform: translateX(200px) rotate(360deg)} */
+    100% { background-color: green; transform: translateX(200px)}
 }
 
 /* .box-1{
