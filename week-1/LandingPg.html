@@ -1,15 +1,68 @@
 <!Doctype html>
 <html>
 
-<head>
+<head lang="en">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width initialscale=1.0">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
     <title>Landing Page</title>
+    <!-- bootstrap -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+
+    <!-- 2. Moved custom CSS below Bootstrap so your custom styles can override Bootstrap defaults -->
     <link rel="stylesheet" href="./styles/landing.css">
 </head>
 
 <body>
-    <h1>Landing Page</h1>
+    <!-- navbar comes here -->
+    <nav class="navbar">
+        <ul class="nav-items">
+            <li>Home</li>
+            <li>Features</li>
+            <li>Pricing</li>
+            <li>Contact</li>
+            <li>Login Button</li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- hero section -->
+        <!-- hover transition transform -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Become a better developer</h1>
+                <p>Master HTML,CSS, Javascript and React</p>
+                <p>With hands-on projects and real-world Practice</p>
+                <div class="buttons">
+                    <button class="btn">Get Started</button>
+                    <button class="btn">Learn-More</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2>Meet our Teams</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>John</h3>
+                    <p>Frontend</p>
+                    <p>LinkedIn</p>
+                </div>
+                <div class="card">
+                    <h3>John</h3>
+                    <p>UI Designer</p>
+                    <p>LinkedIn</p>
+                </div>
+                <div class="card">
+                    <h3>Mike</h3>
+                    <p>Backend</p>
+                    <p>LinkedIn</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
 </body>
 
 </html>

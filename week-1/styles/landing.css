@@ -1,0 +1,46 @@
+.nav-items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-items li{
+    list-style: none;
+}
+
+.hero{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.hero-content{
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+}
+
+.features h2{
+    text-align: center;
+}
+.features{
+    border: 1px solid black;
+    margin-top: 15px;
+
+}
+
+.card{
+    border: 1px solid black;
+    text-align: center;
+    padding: 20px;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 10px;
+    gap: 15px;
+}
